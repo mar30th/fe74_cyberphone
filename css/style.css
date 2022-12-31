@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+header {
+  background-color: #f5f9fe;
+  padding: 13px 0;
+  box-shadow: 0 4px 5px #e2ebfc;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a73dd;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #121212;
+  padding: 0 25px !important;
+}
+.nav-link::after {
+  content: "";
+  width: 100%;
+  background-color: #2a73dd;
+  height: 2px;
+  display: block;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.active .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2a73dd;
+  padding: 0 25px !important;
+}
+.active .nav-link::after {
+  content: "";
+  width: 100%;
+  background-color: #2a73dd;
+  height: 2px;
+  display: block;
+  transform: scaleX(1);
+}
+.active .nav-link:hover {
+  width: 100%;
+  transform: scale(1);
+}
+
+#carousel {
+  background-image: url(../../image/product-header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 225px 0;
+}
+
+.carousel__content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #2a73dd;
+}
+
+.carousel__content h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1d365e;
+}
+
+.carousel__content p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #656774;
+  padding: 13px 0;
+}/*# sourceMappingURL=style.css.map */
